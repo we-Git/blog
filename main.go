@@ -10,4 +10,6 @@ func main() {
 	if err != nil {
 		log.Fatalf("cmd.Execute err: %v", err)
 	}
+	//t,_:=time.LoadLocation("Asia/shanghai")
+	//fmt.Println(time.Now().In(t))
 }

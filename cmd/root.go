@@ -1,6 +1,8 @@
 package cmd
 
-import "github.com/spf13/cobra"
+import (
+	"github.com/spf13/cobra"
+)
 
 var rootCmd = &cobra.Command{
 	Use:   "",
@@ -14,4 +16,5 @@ func Execute() error {
 
 func init() {
 	rootCmd.AddCommand(wordCmd)
+	rootCmd.AddCommand(timeCmd)
 }
